@@ -6,5 +6,6 @@ import { SchedulesRepository } from './schedules.repository';
 @Module({
   providers: [SchedulesService, SchedulesRepository],
   controllers: [SchedulesController],
+  exports: [SchedulesService, SchedulesRepository],
 })
 export class SchedulesModule {}
